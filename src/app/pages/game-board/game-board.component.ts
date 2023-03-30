@@ -26,6 +26,7 @@ export class GameBoardComponent implements OnInit {
   }
 
   private splitUpPokemon(){
+    // need to change pokemonInPlay to number selected (52)
     for(let i = 0; i < (this.pokemonInPlay.length / 2); i++){
       let pokemonIdx = this.pokedexIntArray.shift();
       this.playerOneDeck.push(this.pokemonInPlay[pokemonIdx-1]);
