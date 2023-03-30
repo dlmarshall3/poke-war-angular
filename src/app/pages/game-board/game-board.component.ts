@@ -9,17 +9,17 @@ import { PokemonService } from '../../services/pokemon.service';
   styleUrls: ['./game-board.component.scss']
 })
 export class GameBoardComponent implements OnInit {
-  public pokemonInPlay: IPokemon[] = [];
-  public playerOneDeck: any[] = [];
-  public playerOneActiveArray: any[] = [];
-  public playerTwoDeck: any[] = [];
-  public playerTwoActiveArray: any[] = [];
+  public deckSize: number = 0;
+  public playerOneDeck: IPokemon[] = [];
+  public playerOneActiveArray: IPokemon[] = []!;
+  public playerTwoDeck: IPokemon[] = [];
+  public playerTwoActiveArray: IPokemon[] = [];
   public pokedexIntArray: any[] = [];
 
   constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
-    this.pokemonInPlay = this.selectedPokemon;
+    this.deckSize = 56;
     this.pokedexIntArray = this.createPokedexIntegerArray();
     this.splitUpPokemon();
     this.drawPokemon();
@@ -27,13 +27,13 @@ export class GameBoardComponent implements OnInit {
 
   private splitUpPokemon(){
     // need to change pokemonInPlay to number selected (52)
-    for(let i = 0; i < (this.pokemonInPlay.length / 2); i++){
+    for(let i = 0; i < (this.deckSize / 2); i++){
       let pokemonIdx = this.pokedexIntArray.shift();
-      this.playerOneDeck.push(this.pokemonInPlay[pokemonIdx-1]);
+      this.playerOneDeck.push(this.selectedPokemon[pokemonIdx-1]);
     }
-    for(let i = 0; i < (this.pokemonInPlay.length / 2); i++){
+    for(let i = 0; i < (this.deckSize / 2); i++){
       let pokemonIdx = this.pokedexIntArray.shift();
-      this.playerTwoDeck.push(this.pokemonInPlay[pokemonIdx-1]);
+      this.playerTwoDeck.push(this.selectedPokemon[pokemonIdx-1]);
     }
   }
 
@@ -47,7 +47,7 @@ export class GameBoardComponent implements OnInit {
 
   private createPokedexIntegerArray(){
     return this.pokemonService.shuffleArray(
-      Array.from({length: this.pokemonInPlay.length}, (_, i) => i + 1)
+      Array.from({length: this.selectedPokemon.length}, (_, i) => i + 1)
       );
   }
 
