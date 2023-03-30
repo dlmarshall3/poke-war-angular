@@ -14,25 +14,26 @@ export class GameBoardComponent implements OnInit {
   public playerOneActiveArray: any[] = [];
   public playerTwoDeck: any[] = [];
   public playerTwoActiveArray: any[] = [];
+  public pokedexIntArray: any[] = [];
 
   constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
     this.pokemonInPlay = this.selectedPokemon;
+    this.pokedexIntArray = this.createPokedexIntegerArray();
     this.splitUpPokemon();
     this.drawPokemon();
   }
 
   private splitUpPokemon(){
     for(let i = 0; i < (this.pokemonInPlay.length / 2); i++){
-      let pokemonIdx: number = this.pokedexIntegerArray.shift();
-      this.playerOneDeck.push(this.pokemonInPlay[pokemonIdx]);
+      let pokemonIdx = this.pokedexIntArray.shift();
+      this.playerOneDeck.push(this.pokemonInPlay[pokemonIdx-1]);
     }
     for(let i = 0; i < (this.pokemonInPlay.length / 2); i++){
-      let pokemonIdx: number = this.pokedexIntegerArray.shift();
-      this.playerTwoDeck.push(this.pokemonInPlay[pokemonIdx]);
+      let pokemonIdx = this.pokedexIntArray.shift();
+      this.playerTwoDeck.push(this.pokemonInPlay[pokemonIdx-1]);
     }
-    console.log(this.playerOneDeck, this.playerTwoDeck)
   }
 
   private drawPokemon(){
@@ -40,6 +41,13 @@ export class GameBoardComponent implements OnInit {
     let playerTwoActivePokemon = this.playerTwoDeck.shift();
     this.playerOneActiveArray.push(playerOneActivePokemon);
     this.playerTwoActiveArray.push(playerTwoActivePokemon);
+    console.log(this.playerOneActiveArray)
+  }
+
+  private createPokedexIntegerArray(){
+    return this.pokemonService.shuffleArray(
+      Array.from({length: this.pokemonInPlay.length}, (_, i) => i + 1)
+      );
   }
 
   public get selectedPokemon(){
