@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class GameSelectionService {
   public initialSelectionMade: boolean = false;
   public numberSelectionMade: boolean = false;
-  public allowSound: boolean = true;
+  public allowSound: boolean = false;
   public selectedNumber: number = 0;
   public selectedGeneration: string = '';
   public audioSrc: string = '';

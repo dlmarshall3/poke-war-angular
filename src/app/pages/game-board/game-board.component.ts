@@ -22,7 +22,6 @@ export class GameBoardComponent implements OnInit {
   constructor(private pokemonService: PokemonService, private gameSelectionService: GameSelectionService) { }
 
   ngOnInit(): void {
-    if(this.gameSelectionService.allowSound) this.playMusic();
     this.deckSize = 56;
     this.pokedexIntArray = this.createPokedexIntegerArray();
     this.splitUpPokemon();
@@ -57,12 +56,6 @@ export class GameBoardComponent implements OnInit {
 
   public get selectedPokemon(){
     return this.pokemonService.getSelectedPokemon;
-  }
-
-  private playMusic(){
-    this.gameSelectionService.setAudioSrc = 'assets/music/trainer_battle.mp3';
-    this.music.src = this.gameSelectionService.getMusicSrc;
-    this.music.play();
   }
 
 }
