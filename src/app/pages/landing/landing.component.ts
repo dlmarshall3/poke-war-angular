@@ -7,8 +7,6 @@ import { GameSelectionService } from 'src/app/services/game-selection.service';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  public logoPath = 'assets/images/logo.png';
-
   constructor(private gameSelectionService: GameSelectionService) { }
 
   ngOnInit(): void {
@@ -22,4 +20,7 @@ export class LandingComponent implements OnInit {
     return this.gameSelectionService.hasNumberSelectionBeenMade;
   }
 
+  public get showModalFlag(): boolean {
+    return this.gameSelectionService.getShowModalFlag;
+  }
 }

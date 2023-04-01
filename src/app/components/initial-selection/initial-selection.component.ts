@@ -11,7 +11,6 @@ import {SelectionConstants} from '../../shared/app.constants';
 })
 export class InitialSelectionComponent implements OnInit {
   public initialSelections = [SelectionConstants.new, SelectionConstants.continue, SelectionConstants.instructions];
-  private music = new Audio();
 
   constructor(private gameSelectionService: GameSelectionService) { }
 
@@ -19,7 +18,6 @@ export class InitialSelectionComponent implements OnInit {
   }
 
   public onSelectionClick(selection: string){
-    this.setMusic();
     switch(selection){
       case SelectionConstants.new:
         this.gameSelectionService.setInitialSelection = true;
@@ -27,12 +25,8 @@ export class InitialSelectionComponent implements OnInit {
       case SelectionConstants.continue:
         break;
       case SelectionConstants.instructions:
+        this.gameSelectionService.setShowModal = !this.gameSelectionService.getShowModalFlag;
         break;
     }
-  }
-
-  private setMusic(): void {
-    this.gameSelectionService.setAudioSrc = 'assets/music/intro_edited.mp3';
-    this.gameSelectionService.soundAllowanceFlag = true;
   }
 }

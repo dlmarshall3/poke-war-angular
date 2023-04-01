@@ -10,6 +10,9 @@ export class PokemonComponent implements OnInit {
   @Input() pokedex: number = 0;
   @Input() playerNumber: string = '';
   @Input() playerHP: number = 0;
+  @Input() pokemonTotal: number = 0;
+  @Input() statChange: number = null;
+  @Input() roundResult: number = null;
 
   constructor() { }
 
@@ -20,4 +23,22 @@ export class PokemonComponent implements OnInit {
     return `assets/images/pokemon/${this.pokedex}.png`
   }
 
+  public checkForStatChange() {
+    if(this.statChange === 2){
+      return {color: 'green'}
+    }
+    if(this.statChange === 1){
+      return {color: 'red'}
+    } else {
+      return null;
+    }
+  }
+
+  public onRoundCompletion() {
+    if(this.roundResult === 0){
+      return {filter: 'contrast(0%) brightness(0%)'}
+    } else {
+      return null;
+    }
+  }
 }

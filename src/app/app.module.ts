@@ -9,6 +9,8 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { InitialSelectionComponent } from './components/initial-selection/initial-selection.component';
 import { GenerationSelectionComponent } from './components/generation-selection/generation-selection.component';
 import { NumberSelectionComponent } from './components/number-selection/number-selection.component';
+import { InstructionsModalComponent } from './components/instructions-modal/instructions-modal.component';
+import { LogoComponent } from './components/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NumberSelectionComponent } from './components/number-selection/number-s
     LandingComponent,
     InitialSelectionComponent,
     GenerationSelectionComponent,
-    NumberSelectionComponent
+    NumberSelectionComponent,
+    InstructionsModalComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

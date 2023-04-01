@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { GameSelectionService } from './services/game-selection.service';
 
 @Component({
@@ -8,25 +10,16 @@ import { GameSelectionService } from './services/game-selection.service';
 })
 export class AppComponent implements OnInit {
   title = 'poke-war-angular';
-  public music = new Audio();
 
-  constructor(private gameSelectionService: GameSelectionService){
+  constructor(private gameSelectionService: GameSelectionService, private router: Router){
   }
 
-  ngOnInit(): void {
-    this.playAudio();
+  public ngOnInit(){
+    this.router.navigate(['game']);
   }
 
-  public get allowSoundFlag(): boolean {
-    return this.gameSelectionService.doesUserWantSound;
+  public get showModalFlag(): boolean {
+    return this.gameSelectionService.getShowModalFlag;
   }
 
-  public get musicSrc(): string {
-    return this.gameSelectionService.getMusicSrc;
-  }
-
-  private playAudio(){
-      this.music.src = this.musicSrc;
-      this.music.play();
-    }
 }

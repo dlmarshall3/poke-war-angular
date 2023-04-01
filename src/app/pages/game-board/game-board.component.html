@@ -1,11 +1,21 @@
-<app-pokemon 
-[pokemonName]="playerOneActiveArray[0].name"
-[pokedex]="playerOneActiveArray[0].pokedex"
-[playerNumber]="'One'">
-</app-pokemon>
+<div class="game-board-container">
+    <app-pokemon 
+    [pokemonName]="playerOneActivePokemon.name"
+    [pokedex]="playerOneActivePokemon.pokedex"
+    [pokemonTotal]="playerOnePkmnTotal"
+    [statChange]="playerOneStatChange"
+    [roundResult]="playerOneResult"
+    [playerNumber]="'One'">
+    </app-pokemon>
 
-<app-pokemon 
-[pokemonName]="playerTwoActiveArray[0].name"
-[pokedex]="playerTwoActiveArray[0].pokedex"
-[playerNumber]="'Two'">
-</app-pokemon>
+    <app-pokemon 
+    [pokemonName]="playerTwoActivePokemon.name"
+    [pokedex]="playerTwoActivePokemon.pokedex"
+    [pokemonTotal]="playerTwoPkmnTotal"
+    [statChange]="playerTwoStatChange"
+    [roundResult]="playerTwoResult"
+    [playerNumber]="'Two'">
+    </app-pokemon>
+
+    <button #playButton (click)="battlePokemon()" [disabled]="buttonDisabled">Play</button>
+</div>

@@ -1,4 +1,5 @@
 .pokemon-container {
+    font-family: 'Pokemon';
     .pokemon-player-hp-bar-container {
         height: 12px;
         position: relative;
@@ -28,7 +29,15 @@
     
     .pokemon-image-container {
         background-image: url('../../../assets/images/other/battle-bg.png');
-        background-position-y: -1rem;
+        background-position-y: 1rem;
         background-repeat: no-repeat;
     }
+}
+
+.stat-increase {
+    color: green;
+}
+
+.stat-decrease {
+    color: red;
 }

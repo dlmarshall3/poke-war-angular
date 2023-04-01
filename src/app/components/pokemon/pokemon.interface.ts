@@ -6,4 +6,5 @@ export interface IPokemon {
     weakness: string;
     immune: string;
     resistant: string;
+    total: number;
 }

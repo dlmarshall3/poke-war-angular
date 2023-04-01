@@ -1,6 +1,5 @@
 <div class="app-container">
+    <app-instructions-modal *ngIf="showModalFlag"></app-instructions-modal>
+    <app-logo></app-logo>
     <router-outlet></router-outlet>
 </div>
-
-{{allowSoundFlag}}
-{{musicSrc}}

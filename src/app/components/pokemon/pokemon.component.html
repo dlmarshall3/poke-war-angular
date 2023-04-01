@@ -1,9 +1,9 @@
 <div class="pokemon-container">
     <div class="pokemon-image-container">
-        <img [src]="generatePokemonImage()">
+        <img [src]="generatePokemonImage()" [ngStyle]="onRoundCompletion()">
     </div>
     <div class="pokemon-name-container">
-        {{pokemonName}}
+        {{pokemonName}} || <span [ngStyle]="checkForStatChange()">{{pokemonTotal}}</span>
     </div>
     <div class="pokemon-player-hp-text-container">
         <h2>Player {{playerNumber}} HP</h2>

@@ -7,6 +7,7 @@ export class GameSelectionService {
   public initialSelectionMade: boolean = false;
   public numberSelectionMade: boolean = false;
   public allowSound: boolean = false;
+  public showModal: boolean = false;
   public selectedNumber: number = 0;
   public selectedGeneration: string = '';
   public audioSrc: string = '';
@@ -37,6 +38,10 @@ export class GameSelectionService {
     return this.audioSrc;
   }
 
+  public get getShowModalFlag(): boolean {
+    return this.showModal;
+  }
+
   public set setInitialSelection(selection: boolean) {
     this.initialSelectionMade = selection;
   }
@@ -59,5 +64,9 @@ export class GameSelectionService {
 
   public set setAudioSrc(selection: string){
     this.audioSrc = selection;
+  }
+
+  public set setShowModal(selection: boolean){
+    this.showModal = selection;
   }
 }

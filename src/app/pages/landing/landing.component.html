@@ -1,7 +1,4 @@
 <div class="landing-page-container">
-    <div class="logo-container">
-        <img [src]="logoPath">
-    </div>
     <div class="game-steps-container">
         <app-initial-selection *ngIf="!initialSelectionFlag"></app-initial-selection>
         <app-number-selection *ngIf="initialSelectionFlag && !numberSelectionFlag"></app-number-selection>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { pokemonList } from '../data/pokemon-list';
 import { IPokemon } from '../components/pokemon/pokemon.interface';
+import { GameSelectionService } from './game-selection.service';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,7 @@ export class PokemonService {
   public allPokemon = pokemonList;
   public selectedPokemonList: IPokemon[] = [];
 
-  constructor() {}
+  constructor(private gameSelectionService: GameSelectionService) {}
 
   public populatePokemonFromSelection(generation: string): void {
     switch (generation) {
@@ -35,7 +36,8 @@ export class PokemonService {
   }
 
   public get getSelectedPokemon(): IPokemon[] {
-    this.populatePokemonFromSelection('one');
+    // this.populatePokemonFromSelection(this.gameSelectionService.generationSelected);
+    this.populatePokemonFromSelection('three');
     return this.selectedPokemonList;
   }
 }
