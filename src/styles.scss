@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('assets/font/PKMN\ RBYGSC.ttf');
+}
+
+body {
+    margin: 0;
+    background-image: url('/assets/images/background.png');
+    overflow: hidden;
+}

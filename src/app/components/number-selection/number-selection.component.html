@@ -1,0 +1,3 @@
+<div class="number-selection-container" *ngFor="let selection of numberSelection">
+    <img [src]="generateImagePath(selection)" (click)="onNumberSelect(selection)">
+</div>

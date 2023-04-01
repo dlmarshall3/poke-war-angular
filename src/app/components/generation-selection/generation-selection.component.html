@@ -1,0 +1,3 @@
+<div class="generation-selection-container" *ngFor="let gen of generations">
+    <img [src]="generateImagePath(gen)" (click)="onGenerationSelection(gen)">
+</div>
