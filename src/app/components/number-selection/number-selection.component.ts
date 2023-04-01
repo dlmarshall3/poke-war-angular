@@ -20,6 +20,7 @@ export class NumberSelectionComponent implements OnInit {
 
   public onNumberSelect(selection: number){
     this.gameSelectionService.setNumberSelectionFlag = true;
+    this.gameSelectionService.setNumberSelection = selection;
   }
 
 }

@@ -6,6 +6,10 @@ import { Injectable } from '@angular/core';
 export class GameSelectionService {
   public initialSelectionMade: boolean = false;
   public numberSelectionMade: boolean = false;
+  public allowSound: boolean = true;
+  public selectedNumber: number = 0;
+  public selectedGeneration: string = '';
+  public audioSrc: string = '';
 
   constructor() { }
 
@@ -17,11 +21,43 @@ export class GameSelectionService {
     return this.numberSelectionMade;
   }
 
+  public get numberSelected(): number {
+    return this.selectedNumber;
+  }
+
+  public get generationSelected(): string {
+    return this.selectedGeneration;
+  }
+
+  public get doesUserWantSound(): boolean {
+    return this.allowSound;
+  }
+
+  public get getMusicSrc(): string {
+    return this.audioSrc;
+  }
+
   public set setInitialSelection(selection: boolean) {
     this.initialSelectionMade = selection;
   }
 
   public set setNumberSelectionFlag(selection: boolean){
     this.numberSelectionMade = selection;
+  }
+
+  public set setNumberSelection(selection: number){
+    this.selectedNumber = selection;
+  }
+
+  public set setGenerationSelection(selection: string){
+    this.selectedGeneration = selection;
+  }
+
+  public set soundAllowanceFlag(selection: boolean){
+    this.allowSound = selection;
+  }
+
+  public set setAudioSrc(selection: string){
+    this.audioSrc = selection;
   }
 }

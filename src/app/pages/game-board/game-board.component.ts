@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IPokemon } from 'src/app/components/pokemon/pokemon.interface';
+import { GameSelectionService } from 'src/app/services/game-selection.service';
 
 import { PokemonService } from '../../services/pokemon.service';
 
@@ -16,9 +17,12 @@ export class GameBoardComponent implements OnInit {
   public playerTwoActiveArray: IPokemon[] = [];
   public pokedexIntArray: any[] = [];
 
-  constructor(private pokemonService: PokemonService) { }
+  private music = new Audio();
+
+  constructor(private pokemonService: PokemonService, private gameSelectionService: GameSelectionService) { }
 
   ngOnInit(): void {
+    if(this.gameSelectionService.allowSound) this.playMusic();
     this.deckSize = 56;
     this.pokedexIntArray = this.createPokedexIntegerArray();
     this.splitUpPokemon();
@@ -53,6 +57,12 @@ export class GameBoardComponent implements OnInit {
 
   public get selectedPokemon(){
     return this.pokemonService.getSelectedPokemon;
+  }
+
+  private playMusic(){
+    this.gameSelectionService.setAudioSrc = 'assets/music/trainer_battle.mp3';
+    this.music.src = this.gameSelectionService.getMusicSrc;
+    this.music.play();
   }
 
 }
