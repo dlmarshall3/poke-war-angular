@@ -1,14 +1,21 @@
 <div class="pokemon-container">
-    <div class="pokemon-image-container">
-        <img [src]="generatePokemonImage()" [ngStyle]="onRoundCompletion()">
-    </div>
-    <div class="pokemon-name-container">
-        {{pokemonName}} || <span [ngStyle]="checkForStatChange()">{{pokemonTotal}}</span>
-    </div>
-    <div class="pokemon-player-hp-text-container">
-        <h2>Player {{playerNumber}} HP</h2>
-    </div>
-    <div class="pokemon-player-hp-bar-container">
-        <span class="player-hp-span"></span>
-    </div>
+    <ng-container *ngIf="gameHasStarted">
+        <div class="pokemon-image-container">
+            <img [src]="generatePokemonImage()" [ngStyle]="onRoundCompletion()">
+        </div>
+        <div class="pokemon-name-container">
+            {{pokemonName}} || <span [ngStyle]="checkForStatChange()">{{pokemonTotal}}</span>
+        </div>
+        <div class="pokemon-player-hp-text-container">
+            <h2>Player {{playerNumber}} HP</h2>
+        </div>
+        <div class="pokemon-player-hp-bar-container">
+            <span class="player-hp-span" [ngStyle]="checkForPlayerHP()"></span>
+        </div>
+    </ng-container>
+    <!-- <ng-container *ngIf="!gameHasStarted">
+        <div class="pokeball-image-container">
+            <img [src]="generatePokeballImage()">
+        </div>
+    </ng-container> -->
 </div>

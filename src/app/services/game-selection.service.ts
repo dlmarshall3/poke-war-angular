@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class GameSelectionService {
   public initialSelectionMade: boolean = false;
   public numberSelectionMade: boolean = false;
+  public gameHasStarted: boolean = false;
   public allowSound: boolean = false;
   public showModal: boolean = false;
   public selectedNumber: number = 0;
@@ -13,6 +14,10 @@ export class GameSelectionService {
   public audioSrc: string = '';
 
   constructor() { }
+
+  public get hasGameStarted(): boolean {
+    return this.gameHasStarted;
+  }
 
   public get hasInitialSelectionBeenMade(): boolean {
     return this.initialSelectionMade;
@@ -68,5 +73,9 @@ export class GameSelectionService {
 
   public set setShowModal(selection: boolean){
     this.showModal = selection;
+  }
+
+  public set setGameHasStartedFlag(selection: boolean){
+    this.gameHasStarted = selection;
   }
 }

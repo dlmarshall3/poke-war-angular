@@ -17,17 +17,25 @@ export class GameBoardComponent implements OnInit {
   @Output() playerTwoStatChange: number = 0;
   @Output() playerOneResult: number = null;
   @Output() playerTwoResult: number = null;
+  @Output() playerOnePercentage: number = 0;
+  @Output() playerTwoPercentage: number = 0;
 
   public deckSize: number = 0;
+  public buttonDisabled: boolean = false;
+  public playCount: number = 0;
+  public pokedexIntArray: any[] = [];
+
   public playerOneDeck: IPokemon[] = [];
   public playerOneActiveArray: IPokemon[] = [];
   public playerOneActivePokemon: IPokemon = {} as IPokemon;
+  public playerOnePlayedPokemon: IPokemon[] = [];
+  public playerOneScore: number = 0;
+
   public playerTwoDeck: IPokemon[] = [];
   public playerTwoActiveArray: IPokemon[] = [];
   public playerTwoActivePokemon: IPokemon = {} as IPokemon;
-  public pokedexIntArray: any[] = [];
-  public playCount: number = 0;
-  public buttonDisabled: boolean = false;
+  public playerTwoPlayedPokemon: IPokemon[] = [];
+  public playerTwoScore: number = 0;
 
   constructor(private pokemonService: PokemonService, private gameSelectionService: GameSelectionService) { }
 
@@ -36,7 +44,6 @@ export class GameBoardComponent implements OnInit {
     this.deckSize = 56;
     this.pokedexIntArray = this.createPokedexIntegerArray();
     this.splitUpPokemon();
-    this.drawPokemon();
   }
 
   private splitUpPokemon(){
@@ -50,15 +57,6 @@ export class GameBoardComponent implements OnInit {
     }
   }
 
-  private drawPokemon(){
-    this.playerOneActivePokemon = this.playerOneDeck.shift();
-    this.playerTwoActivePokemon = this.playerTwoDeck.shift();
-    this.playerOnePkmnTotal = this.playerOneActivePokemon.total;
-    this.playerTwoPkmnTotal = this.playerTwoActivePokemon.total;
-    this.playerOneActiveArray.push(this.playerOneActivePokemon);
-    this.playerTwoActiveArray.push(this.playerTwoActivePokemon);
-  }
-
   private createPokedexIntegerArray(){
     return this.pokemonService.shuffleArray(
       Array.from({length: this.selectedPokemon.length}, (_, i) => i + 1)
@@ -70,13 +68,34 @@ export class GameBoardComponent implements OnInit {
   }
 
   public battlePokemon(): void {
+    this.resetStyling();
+    this.drawPokemon();
     this.playCount++;
     this.buttonDisabled = true;
-    this.firstTypeCheck();
-    this.immuneCheck();
-    this.resistanceCheck();
-    this.finalComparisonCheck();
-    this.buttonDisabled = false;
+    setTimeout(() => {
+      this.firstTypeCheck();
+      this.immuneCheck();
+      this.resistanceCheck();
+    }, 400);
+    setTimeout(() => {
+      this.finalComparisonCheck()
+    }, 500);
+    this.distributePokemon();
+    this.checkCardCount();
+    this.updateScore();
+    setTimeout(() => {
+      this.buttonDisabled = false;
+    }, 500);
+  }
+
+  private drawPokemon(){
+    this.gameSelectionService.setGameHasStartedFlag = true;
+    this.playerOneActivePokemon = this.playerOneDeck.shift();
+    this.playerTwoActivePokemon = this.playerTwoDeck.shift();
+    this.playerOnePkmnTotal = this.playerOneActivePokemon.total;
+    this.playerTwoPkmnTotal = this.playerTwoActivePokemon.total;
+    this.playerOneActiveArray.push(this.playerOneActivePokemon);
+    this.playerTwoActiveArray.push(this.playerTwoActivePokemon);
   }
 
   private firstTypeCheck(): void {
@@ -148,5 +167,55 @@ export class GameBoardComponent implements OnInit {
       if(this.playerTwoActivePokemon.total > this.playerTwoPkmnTotal){
         this.playerTwoStatChange = 1;
       }
+    }
+
+    private distributePokemon(): void {
+      if(this.playerOnePkmnTotal > this.playerTwoPkmnTotal){
+        this.playerOnePlayedPokemon.push(this.playerOneActivePokemon, this.playerTwoActivePokemon);
+      } else {
+        this.playerTwoPlayedPokemon.push(this.playerOneActivePokemon, this.playerTwoActivePokemon);
+      }
+      this.playerOneActiveArray = [];
+      this.playerTwoActiveArray = [];
+    }
+
+    private checkCardCount(): void {
+      if(this.playerOneDeck.length === 0 && this.playerOnePlayedPokemon.length > 0){
+        this.refillHand('one');
+      }
+      if(this.playerTwoDeck.length === 0 && this.playerTwoPlayedPokemon.length > 0){
+        this.refillHand('two');
+      }
+    }
+
+    private refillHand(player: string){
+      switch(player){
+        case 'one':
+          for(let mon of this.playerOnePlayedPokemon){
+            this.playerOneDeck.push(mon);
+          }
+          break;
+        case 'two':
+          for(let mon of this.playerTwoPlayedPokemon){
+            this.playerTwoDeck.push(mon);
+          } 
+          break;
+      }
+    }
+
+    private resetStyling(): void {
+      this.playerOneResult = null;
+      this.playerTwoResult = null;
+      this.playerOneResult = null;
+      this.playerTwoResult = null;
+      this.playerOneStatChange = null;
+      this.playerTwoStatChange = null;
+    }
+
+    private updateScore() {
+      this.playerOneScore = this.playerOneDeck.length + this.playerOnePlayedPokemon.length + this.playerOneActiveArray.length;
+      this.playerTwoScore = this.playerTwoDeck.length + this.playerTwoPlayedPokemon.length + this.playerTwoActiveArray.length;
+      this.playerOnePercentage = (this.playerOneScore/this.deckSize)*100;
+      this.playerTwoPercentage = (this.playerTwoScore/this.deckSize)*100;
     }
 }

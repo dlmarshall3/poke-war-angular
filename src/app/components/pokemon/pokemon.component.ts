@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { GameSelectionService } from 'src/app/services/game-selection.service';
 
 @Component({
   selector: 'app-pokemon',
@@ -7,20 +8,25 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PokemonComponent implements OnInit {
   @Input() pokemonName: string = '';
-  @Input() pokedex: number = 0;
+  @Input() pokedex: number = null;
   @Input() playerNumber: string = '';
-  @Input() playerHP: number = 0;
-  @Input() pokemonTotal: number = 0;
+  @Input() playerHP: number = null;
+  @Input() pokemonTotal: number = null;
   @Input() statChange: number = null;
   @Input() roundResult: number = null;
+  @Input() hpPercentage: number = 100;
 
-  constructor() { }
+  constructor(private gameSelectionService: GameSelectionService) { }
 
   ngOnInit(): void {
   }
 
   public generatePokemonImage(): string {
     return `assets/images/pokemon/${this.pokedex}.png`
+  }
+
+  public generatePokeballImage(): string {
+    return `assets/images/other/pokeball.png`;
   }
 
   public checkForStatChange() {
@@ -36,9 +42,27 @@ export class PokemonComponent implements OnInit {
 
   public onRoundCompletion() {
     if(this.roundResult === 0){
-      return {filter: 'contrast(0%) brightness(0%)'}
+      return {'filter': 'contrast(0%) brightness(0%)'}
     } else {
       return null;
     }
+  }
+
+  public checkForPlayerHP() {
+    if(this.hpPercentage < 50 && this.hpPercentage >= 20){
+      return {'background-color': '#f8c81e', 'width': `${this.hpPercentage}%`}
+    } else if (this.hpPercentage < 20){
+      return {'background-color': '#af3e3f', 'width': `${this.hpPercentage}%`}
+    } else {
+      return {'background-color': '#20df26', 'width': `${this.hpPercentage}%`}
+    }
+  }
+
+  public get gameHasStarted(): boolean {
+    return this.gameSelectionService.hasGameStarted;
+  }
+
+  private setHPWidth(){
+    return {}
   }
 }
