@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { GameSelectionService } from 'src/app/services/game-selection.service';
+
+import { GameSelectionService } from '../../services/game-selection.service';
 
 @Component({
   selector: 'app-pokemon',

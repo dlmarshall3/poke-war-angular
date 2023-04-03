@@ -43,8 +43,7 @@ export class GameBoardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // this.deckSize = this.gameSelectionService.numberSelected;
-    this.deckSize = 56;
+    this.deckSize = this.gameSelectionService.numberSelected;
     this.pokedexIntArray = this.createPokedexIntegerArray();
     this.splitUpPokemon();
   }
