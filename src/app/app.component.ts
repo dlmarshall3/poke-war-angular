@@ -31,9 +31,10 @@ export class AppComponent implements OnInit {
   }
 
   public returnHome(){
-    this.gameSelectionService.setNumberSelectionFlag = false;
-    this.gameSelectionService.setInitialSelection = false;
-    this.music.src = 'assets/music/intro_edited.mp3';
+    location.reload();
+    // this.gameSelectionService.setNumberSelectionFlag = false;
+    // this.gameSelectionService.setInitialSelection = false;
+    // this.music.src = 'assets/music/intro_edited.mp3';
   }
 
   public get showInstructionModalFlag(): boolean {
