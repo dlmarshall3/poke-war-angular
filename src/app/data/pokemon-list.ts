@@ -6,7 +6,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 318,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Water, Grass, Electric, Fairy"
       },
       {
@@ -16,7 +16,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 405,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Water, Grass, Electric, Fairy"
       },
       {
@@ -26,27 +26,27 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 525,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Water, Grass, Electric, Fairy"
       },
       {
         "pokedex": 4,
         "name": "Charmander",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 309,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 5,
         "name": "Charmeleon",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -63,50 +63,50 @@ export const pokemonList = [
         "pokedex": 7,
         "name": "Squirtle",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 314,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 8,
         "name": "Wartortle",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 9,
         "name": "Blastoise",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 530,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 10,
         "name": "Caterpie",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 195,
         "weakness": "Flying, Rock, Fire",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Grass"
       },
       {
         "pokedex": 11,
         "name": "Metapod",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 205,
         "weakness": "Flying, Rock, Fire",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Grass"
       },
       {
@@ -126,7 +126,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 195,
         "weakness": "Flying, Rock, Fire, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -136,7 +136,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 205,
         "weakness": "Flying, Rock, Fire, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -146,7 +146,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 395,
         "weakness": "Flying, Rock, Fire, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -183,21 +183,21 @@ export const pokemonList = [
         "pokedex": 19,
         "name": "Rattata",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 253,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 20,
         "name": "Raticate",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 413,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 21,
@@ -223,47 +223,47 @@ export const pokemonList = [
         "pokedex": 23,
         "name": "Ekans",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 288,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 24,
         "name": "Arbok",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 448,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 25,
         "name": "Pikachu",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 320,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 26,
         "name": "Raichu",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 485,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 27,
         "name": "Sandshrew",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 300,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -273,7 +273,7 @@ export const pokemonList = [
         "pokedex": 28,
         "name": "Sandslash",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 450,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -283,20 +283,20 @@ export const pokemonList = [
         "pokedex": 29,
         "name": "NidoranF",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 275,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 30,
         "name": "Nidorina",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 365,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -313,20 +313,20 @@ export const pokemonList = [
         "pokedex": 32,
         "name": "NidoranM",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 273,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 33,
         "name": "Nidorino",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 365,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -343,7 +343,7 @@ export const pokemonList = [
         "pokedex": 35,
         "name": "Clefairy",
         "typeOne": "Fairy",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 323,
         "weakness": "Poison, Steel",
         "immune": "Dragon",
@@ -353,7 +353,7 @@ export const pokemonList = [
         "pokedex": 36,
         "name": "Clefable",
         "typeOne": "Fairy",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 483,
         "weakness": "Poison, Steel",
         "immune": "Dragon",
@@ -363,20 +363,20 @@ export const pokemonList = [
         "pokedex": 37,
         "name": "Vulpix",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 299,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 38,
         "name": "Ninetales",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 505,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -426,7 +426,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 320,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Water, Grass, Electric, Fairy"
       },
       {
@@ -436,7 +436,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 395,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Water, Grass, Electric, Fairy"
       },
       {
@@ -446,7 +446,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 490,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Water, Grass, Electric, Fairy"
       },
       {
@@ -456,7 +456,7 @@ export const pokemonList = [
         "typeTwo": "Grass",
         "total": 285,
         "weakness": "Flying, Poison, Rock, Bug, Fire, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Water, Grass, Electric"
       },
       {
@@ -466,7 +466,7 @@ export const pokemonList = [
         "typeTwo": "Grass",
         "total": 405,
         "weakness": "Flying, Poison, Rock, Bug, Fire, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Water, Grass, Electric"
       },
       {
@@ -476,7 +476,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 305,
         "weakness": "Flying, Rock, Fire, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -486,14 +486,14 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 450,
         "weakness": "Flying, Rock, Fire, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 50,
         "name": "Diglett",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 265,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -503,7 +503,7 @@ export const pokemonList = [
         "pokedex": 51,
         "name": "Dugtrio",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 425,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -513,100 +513,100 @@ export const pokemonList = [
         "pokedex": 52,
         "name": "Meowth",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 290,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 53,
         "name": "Persian",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 440,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 54,
         "name": "Psyduck",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 320,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 55,
         "name": "Golduck",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 56,
         "name": "Mankey",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 305,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
         "pokedex": 57,
         "name": "Primeape",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 455,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
         "pokedex": 58,
         "name": "Growlithe",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 350,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 59,
         "name": "Arcanine",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 555,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 60,
         "name": "Poliwag",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 300,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 61,
         "name": "Poliwhirl",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 385,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -616,67 +616,67 @@ export const pokemonList = [
         "typeTwo": "Fighting",
         "total": 510,
         "weakness": "Grass, Electric, Flying, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Steel, Fire, Water, Ice, Dark"
       },
       {
         "pokedex": 63,
         "name": "Abra",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 310,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 64,
         "name": "Kadabra",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 400,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 65,
         "name": "Alakazam",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 66,
         "name": "Machop",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 305,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
         "pokedex": 67,
         "name": "Machoke",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
         "pokedex": 68,
         "name": "Machamp",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 505,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
@@ -686,7 +686,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 300,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -696,7 +696,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 390,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -706,7 +706,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 490,
         "weakness": "Flying, Fire, Psychic, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -716,7 +716,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 335,
         "weakness": "Electric, Psychic, Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Steel, Fire, Water, Ice, Fairy"
       },
       {
@@ -726,7 +726,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 515,
         "weakness": "Electric, Psychic, Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Steel, Fire, Water, Ice, Fairy"
       },
       {
@@ -763,20 +763,20 @@ export const pokemonList = [
         "pokedex": 77,
         "name": "Ponyta",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 410,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 78,
         "name": "Rapidash",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -786,7 +786,7 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 315,
         "weakness": "Bug, Ghost, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Steel, Fire, Water, Psychic, Ice"
       },
       {
@@ -796,7 +796,7 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 490,
         "weakness": "Bug, Ghost, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Steel, Fire, Water, Psychic, Ice"
       },
       {
@@ -853,10 +853,10 @@ export const pokemonList = [
         "pokedex": 86,
         "name": "Seel",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 325,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -866,37 +866,37 @@ export const pokemonList = [
         "typeTwo": "Ice",
         "total": 475,
         "weakness": "Fighting, Rock, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Water, Ice"
       },
       {
         "pokedex": 88,
         "name": "Grimer",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 325,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 89,
         "name": "Muk",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 90,
         "name": "Shellder",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 305,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -906,7 +906,7 @@ export const pokemonList = [
         "typeTwo": "Ice",
         "total": 525,
         "weakness": "Electric, Fighting, Rock, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Water, Ice"
       },
       {
@@ -953,60 +953,60 @@ export const pokemonList = [
         "pokedex": 96,
         "name": "Drowzee",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 328,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 97,
         "name": "Hypno",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 483,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 98,
         "name": "Krabby",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 325,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 99,
         "name": "Kingler",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 475,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 100,
         "name": "Voltorb",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 330,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 101,
         "name": "Electrode",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 490,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
@@ -1016,7 +1016,7 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 325,
         "weakness": "Flying, Poison, Bug, Ghost, Fire, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Water, Grass, Electric, Psychic"
       },
       {
@@ -1026,14 +1026,14 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 530,
         "weakness": "Flying, Poison, Bug, Ghost, Fire, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Water, Grass, Electric, Psychic"
       },
       {
         "pokedex": 104,
         "name": "Cubone",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 320,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -1043,7 +1043,7 @@ export const pokemonList = [
         "pokedex": 105,
         "name": "Marowak",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 425,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -1053,50 +1053,50 @@ export const pokemonList = [
         "pokedex": 106,
         "name": "Hitmonlee",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 455,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
         "pokedex": 107,
         "name": "Hitmonchan",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 455,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
         "pokedex": 108,
         "name": "Lickitung",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 385,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 109,
         "name": "Koffing",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 340,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 110,
         "name": "Weezing",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 490,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -1123,80 +1123,80 @@ export const pokemonList = [
         "pokedex": 113,
         "name": "Chansey",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 450,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 114,
         "name": "Tangela",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 435,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
         "pokedex": 115,
         "name": "Kangaskhan",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 490,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 116,
         "name": "Horsea",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 295,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 117,
         "name": "Seadra",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 440,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 118,
         "name": "Goldeen",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 320,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 119,
         "name": "Seaking",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 450,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 120,
         "name": "Staryu",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 340,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -1206,7 +1206,7 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 520,
         "weakness": "Grass, Electric, Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Steel, Fire, Water, Psychic, Ice"
       },
       {
@@ -1216,7 +1216,7 @@ export const pokemonList = [
         "typeTwo": "Fairy",
         "total": 460,
         "weakness": "Rock, Bug, Ghost, Steel, Fire, Dark",
-        "immune": "",
+        "immune": null,
         "resistant": "Psychic, Ice"
       },
       {
@@ -1236,57 +1236,57 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 455,
         "weakness": "Rock, Bug, Ghost, Fire, Steel",
-        "immune": "",
+        "immune": null,
         "resistant": "Psychic, Ice"
       },
       {
         "pokedex": 125,
         "name": "Electabuzz",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 490,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 126,
         "name": "Magmar",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 495,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 127,
         "name": "Pinsir",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Flying, Fire, Rock",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Grass"
       },
       {
         "pokedex": 128,
         "name": "Tauros",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 490,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 129,
         "name": "Magikarp",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 200,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -1306,68 +1306,68 @@ export const pokemonList = [
         "typeTwo": "Ice",
         "total": 535,
         "weakness": "Fighting, Rock, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Water, Ice"
       },
       {
         "pokedex": 132,
         "name": "Ditto",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 288,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 133,
         "name": "Eevee",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 325,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 134,
         "name": "Vaporeon",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 525,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 135,
         "name": "Jolteon",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 525,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 136,
         "name": "Flareon",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 525,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 137,
         "name": "Porygon",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 395,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 138,
@@ -1376,7 +1376,7 @@ export const pokemonList = [
         "typeTwo": "Water",
         "total": 355,
         "weakness": "Fighting, Ground, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire, Ice"
       },
       {
@@ -1386,7 +1386,7 @@ export const pokemonList = [
         "typeTwo": "Water",
         "total": 495,
         "weakness": "Fighting, Ground, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire, Ice"
       },
       {
@@ -1396,7 +1396,7 @@ export const pokemonList = [
         "typeTwo": "Water",
         "total": 355,
         "weakness": "Fighting, Ground, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire, Ice"
       },
       {
@@ -1406,7 +1406,7 @@ export const pokemonList = [
         "typeTwo": "Water",
         "total": 495,
         "weakness": "Fighting, Ground, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire, Ice"
       },
       {
@@ -1423,11 +1423,11 @@ export const pokemonList = [
         "pokedex": 143,
         "name": "Snorlax",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 540,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 144,
@@ -1463,20 +1463,20 @@ export const pokemonList = [
         "pokedex": 147,
         "name": "Dratini",
         "typeOne": "Dragon",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 300,
         "weakness": "Dragon, Ice, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Fire, Water, Grass, Electric"
       },
       {
         "pokedex": 148,
         "name": "Dragonair",
         "typeOne": "Dragon",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 420,
         "weakness": "Dragon, Ice, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Fire, Water, Grass, Electric"
       },
       {
@@ -1493,131 +1493,131 @@ export const pokemonList = [
         "pokedex": 150,
         "name": "Mewtwo",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 680,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 151,
         "name": "Mew",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 600,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 152,
         "name": "Chikorita",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 318,
         "weakness": "Flying, Poison, Bug, Fire, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
         "pokedex": 153,
         "name": "Bayleef",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Flying, Poison, Bug, Fire, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
         "pokedex": 154,
         "name": "Meganium",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 525,
         "weakness": "Flying, Poison, Bug, Fire, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
         "pokedex": 155,
         "name": "Cyndaquil",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 309,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 156,
         "name": "Quilava",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 157,
         "name": "Typhlosion",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 534,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 158,
         "name": "Totodile",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 314,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 159,
         "name": "Croconaw",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 160,
         "name": "Feraligatr",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 530,
         "weakness": "Electric, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 161,
         "name": "Sentret",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 215,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 162,
         "name": "Furret",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 415,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 163,
@@ -1666,7 +1666,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 250,
         "weakness": "Flying, Rock, Fire, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -1676,7 +1676,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 400,
         "weakness": "Flying, Rock, Fire, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -1696,7 +1696,7 @@ export const pokemonList = [
         "typeTwo": "Electric",
         "total": 330,
         "weakness": "Ground, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Fire, Water, Ice"
       },
       {
@@ -1706,24 +1706,24 @@ export const pokemonList = [
         "typeTwo": "Electric",
         "total": 460,
         "weakness": "Ground, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 172,
         "name": "Pichu",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 205,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 173,
         "name": "Cleffa",
         "typeOne": "Fairy",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 218,
         "weakness": "Poison, Steel",
         "immune": "Dragon",
@@ -1743,7 +1743,7 @@ export const pokemonList = [
         "pokedex": 175,
         "name": "Togepi",
         "typeOne": "Fairy",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 245,
         "weakness": "Poison, Steel",
         "immune": "Dragon",
@@ -1783,40 +1783,40 @@ export const pokemonList = [
         "pokedex": 179,
         "name": "Mareep",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 280,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 180,
         "name": "Flaaffy",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 365,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 181,
         "name": "Ampharos",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 510,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 182,
         "name": "Bellossom",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 490,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
@@ -1843,20 +1843,20 @@ export const pokemonList = [
         "pokedex": 185,
         "name": "Sudowoodo",
         "typeOne": "Rock",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 410,
         "weakness": "Fighting, Ground, Steel, Water, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire, Ice"
       },
       {
         "pokedex": 186,
         "name": "Politoed",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -1893,30 +1893,30 @@ export const pokemonList = [
         "pokedex": 190,
         "name": "Aipom",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 360,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 191,
         "name": "Sunkern",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 180,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
         "pokedex": 192,
         "name": "Sunflora",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 425,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
@@ -1953,17 +1953,17 @@ export const pokemonList = [
         "pokedex": 196,
         "name": "Espeon",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 525,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 197,
         "name": "Umbreon",
         "typeOne": "Dark",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 525,
         "weakness": "Fighting, Bug, Fairy",
         "immune": "Psychic",
@@ -1986,14 +1986,14 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 490,
         "weakness": "Bug, Ghost, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Steel, Fire, Water, Psychic, Ice"
       },
       {
         "pokedex": 200,
         "name": "Misdreavus",
         "typeOne": "Ghost",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 435,
         "weakness": "Ghost, Dark",
         "immune": "Normal, Fighting, Ground",
@@ -2003,20 +2003,20 @@ export const pokemonList = [
         "pokedex": 201,
         "name": "Unown",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 336,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 202,
         "name": "Wobbuffet",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
@@ -2033,10 +2033,10 @@ export const pokemonList = [
         "pokedex": 204,
         "name": "Pineco",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 290,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -2053,11 +2053,11 @@ export const pokemonList = [
         "pokedex": 206,
         "name": "Dunsparce",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 415,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 207,
@@ -2083,7 +2083,7 @@ export const pokemonList = [
         "pokedex": 209,
         "name": "Snubbull",
         "typeOne": "Fairy",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 300,
         "weakness": "Poison, Steel",
         "immune": "Dragon",
@@ -2093,7 +2093,7 @@ export const pokemonList = [
         "pokedex": 210,
         "name": "Granbull",
         "typeOne": "Fairy",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 450,
         "weakness": "Poison, Steel",
         "immune": "Dragon",
@@ -2106,7 +2106,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 440,
         "weakness": "Electric, Psychic, Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Steel, Fire, Water, Ice, Fairy"
       },
       {
@@ -2136,7 +2136,7 @@ export const pokemonList = [
         "typeTwo": "Fighting",
         "total": 500,
         "weakness": "Flying, Fire, Psychic, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Bug, Grass, Dark"
       },
       {
@@ -2153,21 +2153,21 @@ export const pokemonList = [
         "pokedex": 216,
         "name": "Teddiursa",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 330,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 217,
         "name": "Ursaring",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 218,
@@ -2176,7 +2176,7 @@ export const pokemonList = [
         "typeTwo": "Rock",
         "total": 250,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -2186,7 +2186,7 @@ export const pokemonList = [
         "typeTwo": "Rock",
         "total": 430,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -2216,27 +2216,27 @@ export const pokemonList = [
         "typeTwo": "Rock",
         "total": 410,
         "weakness": "Fighting, Ground, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire, Ice"
       },
       {
         "pokedex": 223,
         "name": "Remoraid",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 300,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 224,
         "name": "Octillery",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 480,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -2296,14 +2296,14 @@ export const pokemonList = [
         "typeTwo": "Dragon",
         "total": 540,
         "weakness": "Dragon, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water"
       },
       {
         "pokedex": 231,
         "name": "Phanpy",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 330,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -2313,7 +2313,7 @@ export const pokemonList = [
         "pokedex": 232,
         "name": "Donphan",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -2323,50 +2323,50 @@ export const pokemonList = [
         "pokedex": 233,
         "name": "Porygon2",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 515,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 234,
         "name": "Stantler",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 465,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 235,
         "name": "Smeargle",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 250,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 236,
         "name": "Tyrogue",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 210,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
         "pokedex": 237,
         "name": "Hitmontop",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 455,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
@@ -2376,77 +2376,77 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 305,
         "weakness": "Rock, Bug, Ghost, Fire, Steel",
-        "immune": "",
+        "immune": null,
         "resistant": "Psychic, Ice"
       },
       {
         "pokedex": 239,
         "name": "Elekid",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 360,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 240,
         "name": "Magby",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 365,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 241,
         "name": "Miltank",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 490,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 242,
         "name": "Blissey",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 540,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 243,
         "name": "Raikou",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 580,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 244,
         "name": "Entei",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 580,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 245,
         "name": "Suicune",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 580,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -2506,47 +2506,47 @@ export const pokemonList = [
         "typeTwo": "Grass",
         "total": 600,
         "weakness": "Flying, Poison, Bug, Ghost, Fire, Ice, Dark",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Water, Grass, Electric, Psychic"
       },
       {
         "pokedex": 252,
         "name": "Treecko",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 310,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
         "pokedex": 253,
         "name": "Grovyle",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
         "pokedex": 254,
         "name": "Sceptile",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 530,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
         "pokedex": 255,
         "name": "Torchic",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 310,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
@@ -2556,7 +2556,7 @@ export const pokemonList = [
         "typeTwo": "Fighting",
         "total": 405,
         "weakness": "Flying, Ground, Water, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Dark"
       },
       {
@@ -2566,17 +2566,17 @@ export const pokemonList = [
         "typeTwo": "Fighting",
         "total": 530,
         "weakness": "Flying, Ground, Water, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Dark"
       },
       {
         "pokedex": 258,
         "name": "Mudkip",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 310,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -2603,7 +2603,7 @@ export const pokemonList = [
         "pokedex": 261,
         "name": "Poochyena",
         "typeOne": "Dark",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 220,
         "weakness": "Fighting, Bug, Fairy",
         "immune": "Psychic",
@@ -2613,7 +2613,7 @@ export const pokemonList = [
         "pokedex": 262,
         "name": "Mightyena",
         "typeOne": "Dark",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 420,
         "weakness": "Fighting, Bug, Fairy",
         "immune": "Psychic",
@@ -2623,11 +2623,11 @@ export const pokemonList = [
         "pokedex": 263,
         "name": "Zigzagoon",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 240,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 264,
@@ -2637,26 +2637,26 @@ export const pokemonList = [
         "total": 420,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 265,
         "name": "Wurmple",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 195,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 266,
         "name": "Silcoon",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 205,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -2673,10 +2673,10 @@ export const pokemonList = [
         "pokedex": 268,
         "name": "Cascoon",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 205,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -2686,7 +2686,7 @@ export const pokemonList = [
         "typeTwo": "Poison",
         "total": 385,
         "weakness": "Flying, Rock, Fire, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -2696,7 +2696,7 @@ export const pokemonList = [
         "typeTwo": "Grass",
         "total": 220,
         "weakness": "Flying, Poison, Bug",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Steel, Water"
       },
       {
@@ -2706,7 +2706,7 @@ export const pokemonList = [
         "typeTwo": "Grass",
         "total": 340,
         "weakness": "Flying, Poison, Bug",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Steel, Water"
       },
       {
@@ -2716,17 +2716,17 @@ export const pokemonList = [
         "typeTwo": "Grass",
         "total": 480,
         "weakness": "Flying, Poison, Bug",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Steel, Water"
       },
       {
         "pokedex": 273,
         "name": "Seedot",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 220,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
@@ -2796,7 +2796,7 @@ export const pokemonList = [
         "typeTwo": "Fairy",
         "total": 198,
         "weakness": "Rock, Bug, Ghost, Steel, Fire, Dark",
-        "immune": "",
+        "immune": null,
         "resistant": "Psychic, Ice"
       },
       {
@@ -2806,7 +2806,7 @@ export const pokemonList = [
         "typeTwo": "Fairy",
         "total": 278,
         "weakness": "Rock, Bug, Ghost, Steel, Fire, Dark",
-        "immune": "",
+        "immune": null,
         "resistant": "Psychic, Ice"
       },
       {
@@ -2816,7 +2816,7 @@ export const pokemonList = [
         "typeTwo": "Fairy",
         "total": 518,
         "weakness": "Rock, Bug, Ghost, Steel, Fire, Dark",
-        "immune": "",
+        "immune": null,
         "resistant": "Psychic, Ice"
       },
       {
@@ -2826,7 +2826,7 @@ export const pokemonList = [
         "typeTwo": "Water",
         "total": 269,
         "weakness": "Flying, Rock, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Ground, Steel, Water, Ice"
       },
       {
@@ -2843,10 +2843,10 @@ export const pokemonList = [
         "pokedex": 285,
         "name": "Shroomish",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 295,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
@@ -2856,38 +2856,38 @@ export const pokemonList = [
         "typeTwo": "Fighting",
         "total": 460,
         "weakness": "Flying, Poison, Fire, Psychic, Ice, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Rock, Water, Grass, Electric, Dark"
       },
       {
         "pokedex": 287,
         "name": "Slakoth",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 280,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 288,
         "name": "Vigoroth",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 440,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 289,
         "name": "Slaking",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 670,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 290,
@@ -2917,56 +2917,56 @@ export const pokemonList = [
         "total": 236,
         "weakness": "Flying, Rock, Ghost, Fire, Dark",
         "immune": "Normal, Fighting, Poison, Ground, Bug, Steel, Water, Grass, Electric, Psychic, Ice, Dragon, Fairy",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 293,
         "name": "Whismur",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 240,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 294,
         "name": "Loudred",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 360,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 295,
         "name": "Exploud",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 490,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 296,
         "name": "Makuhita",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 237,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
         "pokedex": 297,
         "name": "Hariyama",
         "typeOne": "Fighting",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 474,
         "weakness": "Psychic, Flying, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Rock, Bug, Dark"
       },
       {
@@ -2983,31 +2983,31 @@ export const pokemonList = [
         "pokedex": 299,
         "name": "Nosepass",
         "typeOne": "Rock",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 375,
         "weakness": "Fighting, Ground, Steel, Water, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire"
       },
       {
         "pokedex": 300,
         "name": "Skitty",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 260,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 301,
         "name": "Delcatty",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 400,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 302,
@@ -3066,7 +3066,7 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 280,
         "weakness": "Flying, Ghost, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Rock"
       },
       {
@@ -3076,67 +3076,67 @@ export const pokemonList = [
         "typeTwo": "Psychic",
         "total": 410,
         "weakness": "Flying, Ghost, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Rock"
       },
       {
         "pokedex": 309,
         "name": "Electrike",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 295,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 310,
         "name": "Manectric",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 475,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 311,
         "name": "Plusle",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 312,
         "name": "Minun",
         "typeOne": "Electric",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 405,
         "weakness": "Ground",
-        "immune": "",
+        "immune": null,
         "resistant": "Flying, Steel, Electric"
       },
       {
         "pokedex": 313,
         "name": "Volbeat",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 430,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 314,
         "name": "Illumise",
         "typeOne": "Bug",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 430,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -3153,20 +3153,20 @@ export const pokemonList = [
         "pokedex": 316,
         "name": "Gulpin",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 302,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
         "pokedex": 317,
         "name": "Swalot",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 467,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -3193,20 +3193,20 @@ export const pokemonList = [
         "pokedex": 320,
         "name": "Wailmer",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 400,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 321,
         "name": "Wailord",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 500,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -3233,47 +3233,47 @@ export const pokemonList = [
         "pokedex": 324,
         "name": "Torkoal",
         "typeOne": "Fire",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 470,
         "weakness": "Ground, Rock, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Bug, Steel, Fire, Grass, Ice, Fairy"
       },
       {
         "pokedex": 325,
         "name": "Spoink",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 330,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 326,
         "name": "Grumpig",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 470,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 327,
         "name": "Spinda",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 360,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 328,
         "name": "Trapinch",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 290,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -3303,10 +3303,10 @@ export const pokemonList = [
         "pokedex": 331,
         "name": "Cacnea",
         "typeOne": "Grass",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 335,
         "weakness": "Fire, Ice, Flying",
-        "immune": "",
+        "immune": null,
         "resistant": "Ground, Water, Grass, Electric"
       },
       {
@@ -3343,20 +3343,20 @@ export const pokemonList = [
         "pokedex": 335,
         "name": "Zangoose",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 458,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 336,
         "name": "Seviper",
         "typeOne": "Poison",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 458,
         "weakness": "Ground, Psychic",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Poison, Bug, Grass, Fairy"
       },
       {
@@ -3403,10 +3403,10 @@ export const pokemonList = [
         "pokedex": 341,
         "name": "Corphish",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 308,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -3446,7 +3446,7 @@ export const pokemonList = [
         "typeTwo": "Grass",
         "total": 355,
         "weakness": "Fighting, Bug, Steel, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Electric"
       },
       {
@@ -3456,7 +3456,7 @@ export const pokemonList = [
         "typeTwo": "Grass",
         "total": 495,
         "weakness": "Fighting, Bug, Steel, Ice",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Electric"
       },
       {
@@ -3466,7 +3466,7 @@ export const pokemonList = [
         "typeTwo": "Bug",
         "total": 355,
         "weakness": "Rock, Steel, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Poison"
       },
       {
@@ -3476,54 +3476,54 @@ export const pokemonList = [
         "typeTwo": "Bug",
         "total": 495,
         "weakness": "Rock, Steel, Water",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Poison"
       },
       {
         "pokedex": 349,
         "name": "Feebas",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 200,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 350,
         "name": "Milotic",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 540,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 351,
         "name": "Castform",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 420,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 352,
         "name": "Kecleon",
         "typeOne": "Normal",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 440,
         "weakness": "Fighting",
         "immune": "Ghost",
-        "resistant": ""
+        "resistant": null
       },
       {
         "pokedex": 353,
         "name": "Shuppet",
         "typeOne": "Ghost",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 295,
         "weakness": "Ghost, Dark",
         "immune": "Normal, Fighting",
@@ -3533,7 +3533,7 @@ export const pokemonList = [
         "pokedex": 354,
         "name": "Banette",
         "typeOne": "Ghost",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 455,
         "weakness": "Ghost, Dark",
         "immune": "Normal, Fighting",
@@ -3543,7 +3543,7 @@ export const pokemonList = [
         "pokedex": 355,
         "name": "Duskull",
         "typeOne": "Ghost",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 295,
         "weakness": "Ghost, Dark",
         "immune": "Normal, Fighting",
@@ -3553,7 +3553,7 @@ export const pokemonList = [
         "pokedex": 356,
         "name": "Dusclops",
         "typeOne": "Ghost",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 455,
         "weakness": "Ghost, Dark",
         "immune": "Normal, Fighting",
@@ -3573,17 +3573,17 @@ export const pokemonList = [
         "pokedex": 358,
         "name": "Chimecho",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 455,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 359,
         "name": "Absol",
         "typeOne": "Dark",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 465,
         "weakness": "Fighting, Bug, Fairy",
         "immune": "Psychic",
@@ -3593,30 +3593,30 @@ export const pokemonList = [
         "pokedex": 360,
         "name": "Wynaut",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 260,
         "weakness": "Bug, Ghost",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Psychic"
       },
       {
         "pokedex": 361,
         "name": "Snorunt",
         "typeOne": "Ice",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 300,
         "weakness": "Fighting, Rock, Steel, Fire",
-        "immune": "",
+        "immune": null,
         "resistant": "Ice"
       },
       {
         "pokedex": 362,
         "name": "Glalie",
         "typeOne": "Ice",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 480,
         "weakness": "Fighting, Rock, Steel, Fire",
-        "immune": "",
+        "immune": null,
         "resistant": "Ice"
       },
       {
@@ -3626,7 +3626,7 @@ export const pokemonList = [
         "typeTwo": "Water",
         "total": 290,
         "weakness": "Fighting, Rock, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Water, Ice"
       },
       {
@@ -3636,7 +3636,7 @@ export const pokemonList = [
         "typeTwo": "Water",
         "total": 410,
         "weakness": "Fighting, Rock, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Water, Ice"
       },
       {
@@ -3646,37 +3646,37 @@ export const pokemonList = [
         "typeTwo": "Water",
         "total": 530,
         "weakness": "Fighting, Rock, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Water, Ice"
       },
       {
         "pokedex": 366,
         "name": "Clamperl",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 345,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 367,
         "name": "Huntail",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 485,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 368,
         "name": "Gorebyss",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 485,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
@@ -3686,37 +3686,37 @@ export const pokemonList = [
         "typeTwo": "Rock",
         "total": 485,
         "weakness": "Fighting, Ground, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire, Ice"
       },
       {
         "pokedex": 370,
         "name": "Luvdisc",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 330,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 371,
         "name": "Bagon",
         "typeOne": "Dragon",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 300,
         "weakness": "Dragon, Ice, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Fire, Water, Grass, Electric"
       },
       {
         "pokedex": 372,
         "name": "Shelgon",
         "typeOne": "Dragon",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 420,
         "weakness": "Dragon, Ice, Fairy",
-        "immune": "",
+        "immune": null,
         "resistant": "Fire, Water, Grass, Electric"
       },
       {
@@ -3763,27 +3763,27 @@ export const pokemonList = [
         "pokedex": 377,
         "name": "Regirock",
         "typeOne": "Rock",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 580,
         "weakness": "Fighting, Ground, Steel, Water, Grass",
-        "immune": "",
+        "immune": null,
         "resistant": "Normal, Flying, Poison, Fire"
       },
       {
         "pokedex": 378,
         "name": "Regice",
         "typeOne": "Ice",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 580,
         "weakness": "Fighting, Rock, Steel, Fire",
-        "immune": "",
+        "immune": null,
         "resistant": "Ice"
       },
       {
         "pokedex": 379,
         "name": "Registeel",
         "typeOne": "Steel",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 580,
         "weakness": "Fighting, Ground, Fire",
         "immune": "Poison",
@@ -3813,17 +3813,17 @@ export const pokemonList = [
         "pokedex": 382,
         "name": "Kyogre",
         "typeOne": "Water",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 670,
         "weakness": "Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Steel, Fire, Water, Ice"
       },
       {
         "pokedex": 383,
         "name": "Groudon",
         "typeOne": "Ground",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 670,
         "weakness": "Water, Grass, Ice",
         "immune": "Electric",
@@ -3853,10 +3853,10 @@ export const pokemonList = [
         "pokedex": 386,
         "name": "Deoxys",
         "typeOne": "Psychic",
-        "typeTwo": "",
+        "typeTwo": null,
         "total": 600,
         "weakness": "Bug, Ghost, Grass, Electric",
-        "immune": "",
+        "immune": null,
         "resistant": "Fighting, Steel, Fire, Water, Psychic, Ice"
     }
 ]
