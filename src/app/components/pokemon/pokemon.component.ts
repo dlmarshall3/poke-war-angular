@@ -15,6 +15,7 @@ export class PokemonComponent implements OnInit {
   @Input() statChange: number = null;
   @Input() roundResult: number = null;
   @Input() hpPercentage: number = 100;
+  @Input() types: string[] = [];
 
   constructor(private gameSelectionService: GameSelectionService) { }
 
@@ -25,8 +26,16 @@ export class PokemonComponent implements OnInit {
     return `assets/images/pokemon/${this.pokedex}.png`
   }
 
-  public generatePokeballImage(): string {
-    return `assets/images/other/pokeball.png`;
+  public generateTypeOne(): string {
+    return `assets/images/types/${this.types[0].toLowerCase()}.png`;
+  }
+
+  public generateTypeTwo(): string {
+    if(this.types[1]){
+      return `assets/images/types/${this.types[1].toLowerCase()}.png`
+    } else {
+      return null;
+    }
   }
 
   public checkForStatChange() {

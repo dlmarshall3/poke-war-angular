@@ -21,6 +21,6 @@ export class LandingComponent implements OnInit {
   }
 
   public get showModalFlag(): boolean {
-    return this.gameSelectionService.getShowModalFlag;
+    return this.gameSelectionService.setShowInstructionModal;
   }
 }

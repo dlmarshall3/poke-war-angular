@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { GameSelectionService } from 'src/app/services/game-selection.service';
+import { fireEvent } from 'src/app/shared/helper-functions';
 
 @Component({
   selector: 'app-generation-selection',
@@ -17,6 +19,7 @@ export class GenerationSelectionComponent implements OnInit {
 
   public onGenerationSelection(generation: string){
     this.gameSelectionService.setGenerationSelection = generation;
+    fireEvent('setBattleMusic', [generation]);
     this.router.navigate(['game']);
   }
 

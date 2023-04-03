@@ -6,6 +6,9 @@
         <div class="pokemon-name-container">
             {{pokemonName}} || <span [ngStyle]="checkForStatChange()">{{pokemonTotal}}</span>
         </div>
+        <div class="pokemon-type-container">
+            <img [src]="generateTypeOne()"><img [src]="generateTypeTwo()" *ngIf="types[1]">
+        </div>
         <div class="pokemon-player-hp-text-container">
             <h2>Player {{playerNumber}} HP</h2>
         </div>
@@ -13,9 +16,4 @@
             <span class="player-hp-span" [ngStyle]="checkForPlayerHP()"></span>
         </div>
     </ng-container>
-    <!-- <ng-container *ngIf="!gameHasStarted">
-        <div class="pokeball-image-container">
-            <img [src]="generatePokeballImage()">
-        </div>
-    </ng-container> -->
 </div>

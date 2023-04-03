@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 
+import { fireEvent } from '../shared/helper-functions';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -7,8 +9,9 @@ export class GameSelectionService {
   public initialSelectionMade: boolean = false;
   public numberSelectionMade: boolean = false;
   public gameHasStarted: boolean = false;
-  public allowSound: boolean = false;
-  public showModal: boolean = false;
+  public allowSound: boolean = true;
+  public showInstructionModal: boolean = false;
+  public showAudioModal: boolean = false;
   public selectedNumber: number = 0;
   public selectedGeneration: string = '';
   public audioSrc: string = '';
@@ -43,8 +46,12 @@ export class GameSelectionService {
     return this.audioSrc;
   }
 
-  public get getShowModalFlag(): boolean {
-    return this.showModal;
+  public get getShowInstructionModalFlag(): boolean {
+    return this.showInstructionModal;
+  }
+
+  public get getShowAudioModalFlag(): boolean {
+    return this.showAudioModal;
   }
 
   public set setInitialSelection(selection: boolean) {
@@ -64,6 +71,12 @@ export class GameSelectionService {
   }
 
   public set soundAllowanceFlag(selection: boolean){
+    if(selection === true){
+      fireEvent('allowAudio', true);
+    }
+    if(selection === false){
+      fireEvent('muteAudio', true);
+    }
     this.allowSound = selection;
   }
 
@@ -71,8 +84,12 @@ export class GameSelectionService {
     this.audioSrc = selection;
   }
 
-  public set setShowModal(selection: boolean){
-    this.showModal = selection;
+  public set setShowInstructionModal(selection: boolean){
+    this.showInstructionModal = selection;
+  }
+
+  public set setShowAudioModal(selection: boolean){
+    this.showAudioModal = selection;
   }
 
   public set setGameHasStartedFlag(selection: boolean){

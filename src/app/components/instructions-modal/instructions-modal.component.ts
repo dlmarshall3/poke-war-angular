@@ -14,7 +14,7 @@ export class InstructionsModalComponent implements OnInit {
   }
 
   public onCloseClick(): void {
-    this.gameSelectionService.setShowModal = !this.gameSelectionService.getShowModalFlag;
+    this.gameSelectionService.setShowInstructionModal = !this.gameSelectionService.setShowInstructionModal;
   }
 
 }

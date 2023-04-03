@@ -11,6 +11,8 @@ import { GenerationSelectionComponent } from './components/generation-selection/
 import { NumberSelectionComponent } from './components/number-selection/number-selection.component';
 import { InstructionsModalComponent } from './components/instructions-modal/instructions-modal.component';
 import { LogoComponent } from './components/logo/logo.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { AudioModalComponent } from './components/audio-modal/audio-modal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { LogoComponent } from './components/logo/logo.component';
     GenerationSelectionComponent,
     NumberSelectionComponent,
     InstructionsModalComponent,
-    LogoComponent
+    LogoComponent,
+    ModalComponent,
+    AudioModalComponent,
   ],
   imports: [
     BrowserModule,

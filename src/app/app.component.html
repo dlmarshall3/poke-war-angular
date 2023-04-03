@@ -1,5 +1,6 @@
 <div class="app-container">
-    <app-instructions-modal *ngIf="showModalFlag"></app-instructions-modal>
-    <app-logo></app-logo>
+    <app-instructions-modal *ngIf="showInstructionModalFlag"></app-instructions-modal>
+    <app-audio-modal *ngIf="showAudioModalFlag"></app-audio-modal>
+    <app-logo [routerLink]="['']" (click)="returnHome()"></app-logo>
     <router-outlet></router-outlet>
 </div>
