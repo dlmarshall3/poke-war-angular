@@ -26,11 +26,26 @@
             overflow: hidden;
         }
     }
+
+    .pokemon-name-container {
+        text-align: center;
+    }
+
+    .pokemon-type-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        img:nth-child(2){
+            margin-left: 1rem;
+        }
+    }
     
     .pokemon-image-container {
         background-image: url('../../../assets/images/other/battle-bg.png');
-        background-position-y: 1rem;
+        background-position: center bottom;
         background-repeat: no-repeat;
+        text-align: center;
     }
 }
 

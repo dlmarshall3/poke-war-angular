@@ -78,6 +78,7 @@ export class GameSelectionService {
       fireEvent('muteAudio', true);
     }
     this.allowSound = selection;
+    window.localStorage.setItem('allowAudio', selection.toString());
   }
 
   public set setAudioSrc(selection: string){

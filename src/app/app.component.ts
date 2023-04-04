@@ -2,6 +2,7 @@ import { Component, HostListener, OnInit, RendererFactory2, ViewChild } from '@a
 import { Router } from '@angular/router';
 
 import { GameSelectionService } from './services/game-selection.service';
+import { fireEvent } from './shared/helper-functions';
 
 @Component({
   selector: 'app-root',
@@ -27,14 +28,12 @@ export class AppComponent implements OnInit {
 
   public ngOnInit(){
     this.initiateSafeListeners();
+    this.setLocalStorageSelections();
     this.router.navigate(['']);
   }
 
   public returnHome(){
     location.reload();
-    // this.gameSelectionService.setNumberSelectionFlag = false;
-    // this.gameSelectionService.setInitialSelection = false;
-    // this.music.src = 'assets/music/intro_edited.mp3';
   }
 
   public get showInstructionModalFlag(): boolean {
@@ -92,6 +91,16 @@ export class AppComponent implements OnInit {
         }
       }
     });
+  }
+
+  private setLocalStorageSelections(): void {
+    let audioFlag = JSON.parse(window.localStorage.getItem('allowAudio'));
+    console.log(audioFlag);
+    if(audioFlag === true || null){
+      fireEvent('allowAudio', true);
+    } else {
+      fireEvent('muteAudio', true);
+    }
   }
 
 }
