@@ -12,6 +12,7 @@ export class AudioModalComponent implements OnInit {
   constructor(private gameSelectionService: GameSelectionService) { }
 
   ngOnInit(): void {
+    this.soundChoice();
   }
 
   public get doesUserWantSound(): boolean {
@@ -26,12 +27,8 @@ export class AudioModalComponent implements OnInit {
     }
   }
 
-  public setSoundFlag(selection: boolean){
-    if(selection){
-      this.gameSelectionService.soundAllowanceFlag = true;
-    } else {
-      this.gameSelectionService.soundAllowanceFlag = false;
-    }
+  public setSoundFlag(){
+    this.gameSelectionService.soundAllowanceFlag = !this.doesUserWantSound;
   }
 
 }

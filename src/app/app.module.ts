@@ -13,6 +13,7 @@ import { InstructionsModalComponent } from './components/instructions-modal/inst
 import { LogoComponent } from './components/logo/logo.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { AudioModalComponent } from './components/audio-modal/audio-modal.component';
+import { WarModalComponent } from './components/war-modal/war-modal.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AudioModalComponent } from './components/audio-modal/audio-modal.compon
     LogoComponent,
     ModalComponent,
     AudioModalComponent,
+    WarModalComponent,
   ],
   imports: [
     BrowserModule,

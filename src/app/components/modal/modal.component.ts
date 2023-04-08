@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { GameSelectionService } from 'src/app/services/game-selection.service';
+import { fireEvent } from 'src/app/shared/helper-functions';
 
 @Component({
   selector: 'app-modal',
@@ -20,6 +21,10 @@ export class ModalComponent implements OnInit {
     }
     if(this.gameSelectionService.showAudioModal){
       this.gameSelectionService.setShowAudioModal = !this.gameSelectionService.showAudioModal;
+    }
+    if(this.gameSelectionService.showWarModal){
+      this.gameSelectionService.setShowWarModal = !this.gameSelectionService.showWarModal;
+      fireEvent('closeWarModal', true);
     }
   }
 

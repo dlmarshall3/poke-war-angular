@@ -21,5 +21,7 @@
     [playerNumber]="'Two'">
     </app-pokemon>
 
-    <img src="assets/images/arrow-small.png" (click)="battlePokemon()">
+    <div class="button-container" (click)="battlePokemon()" *ngIf="!buttonDisabled">
+        <img src="assets/images/arrow-small.png">
+    </div>
 </div>

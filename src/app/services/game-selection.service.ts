@@ -12,6 +12,7 @@ export class GameSelectionService {
   public allowSound: boolean = true;
   public showInstructionModal: boolean = false;
   public showAudioModal: boolean = false;
+  public showWarModal: boolean = false;
   public selectedNumber: number = 0;
   public selectedGeneration: string = '';
   public audioSrc: string = '';
@@ -48,6 +49,10 @@ export class GameSelectionService {
 
   public get getShowInstructionModalFlag(): boolean {
     return this.showInstructionModal;
+  }
+
+  public get getShowWarModalFlag(): boolean {
+    return this.showWarModal;
   }
 
   public get getShowAudioModalFlag(): boolean {
@@ -91,6 +96,10 @@ export class GameSelectionService {
 
   public set setShowAudioModal(selection: boolean){
     this.showAudioModal = selection;
+  }
+
+  public set setShowWarModal(selection: boolean){
+    this.showWarModal = selection;
   }
 
   public set setGameHasStartedFlag(selection: boolean){

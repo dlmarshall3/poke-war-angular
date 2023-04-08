@@ -1,5 +1,6 @@
 <app-modal>
-    <h1>Enable SFX?</h1>
-    <img [src]="soundChoice()">
-    <h2><span (click)="setSoundFlag(true)">Yes</span> | <span (click)="setSoundFlag(false)">No</span></h2>
+    <h1>Enable audio?</h1>
+    <div (click)="setSoundFlag()">
+        <img [src]="soundChoice()">
+    </div>
 </app-modal>    

@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, RendererFactory2, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit, RendererFactory2 } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { GameSelectionService } from './services/game-selection.service';
@@ -45,6 +45,10 @@ export class AppComponent implements OnInit {
     return this.gameSelectionService.getShowAudioModalFlag;
   }
 
+  public get showWarModalFlag(): boolean {
+    return this.gameSelectionService.getShowWarModalFlag;
+  }
+
   private addSafeListener(eventName: string, handler: any){
     const renderer = this.renderer.createRenderer(null, null);
     const listener = renderer.listen(document, eventName, handler);
@@ -74,6 +78,11 @@ export class AppComponent implements OnInit {
         this.music.muted = false;
         this.sfx.muted = false;
         this.cries.muted = false;
+      }
+    });
+    this.addSafeListener('warDeclared', (event: any) => {
+      if(event.type === 'warDeclared'){
+        this.gameSelectionService.setShowWarModal = true;
       }
     });
     this.addSafeListener('pokemonCry', (event: any) => {
