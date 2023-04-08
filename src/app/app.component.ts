@@ -12,6 +12,7 @@ import { fireEvent } from './shared/helper-functions';
 export class AppComponent implements OnInit {
   private music = new Audio();
   private sfx = new Audio();
+  private cries = new Audio();
   private listeners: (() => void)[] = [];
 
   constructor(private gameSelectionService: GameSelectionService, private router: Router, private renderer: RendererFactory2){
@@ -65,12 +66,20 @@ export class AppComponent implements OnInit {
       if(event.type === 'muteAudio'){
         this.music.muted = true;
         this.sfx.muted = true;
+        this.cries.muted = true;
       }
     });
     this.addSafeListener('allowAudio', (event: any) => {
       if(event.type === 'allowAudio'){
         this.music.muted = false;
         this.sfx.muted = false;
+        this.cries.muted = false;
+      }
+    });
+    this.addSafeListener('pokemonCry', (event: any) => {
+      if(event.type === 'pokemonCry'){
+        this.cries.src = `assets/audio/cries/${event.detail[0]}.wav`;
+        this.cries.play();
       }
     });
     this.addSafeListener('setBattleMusic', (event: any) => {

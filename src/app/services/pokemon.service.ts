@@ -36,8 +36,7 @@ export class PokemonService {
   }
 
   public get getSelectedPokemon(): IPokemon[] {
-    // this.populatePokemonFromSelection(this.gameSelectionService.generationSelected);
-    this.populatePokemonFromSelection('one');
+    this.populatePokemonFromSelection(this.gameSelectionService.generationSelected);
     return this.selectedPokemonList;
   }
 }

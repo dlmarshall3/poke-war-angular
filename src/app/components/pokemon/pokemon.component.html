@@ -1,7 +1,7 @@
 <div class="pokemon-container">
     <ng-container *ngIf="gameHasStarted">
         <div class="pokemon-image-container">
-            <img [src]="generatePokemonImage()" [ngStyle]="onRoundCompletion()">
+            <img [src]="generatePokemonImage()" [ngStyle]="onRoundCompletion()" class="pokemon-image">
         </div>
         <div class="pokemon-name-container">
             {{pokemonName}} || <span [ngStyle]="checkForStatChange()">{{pokemonTotal}}</span>

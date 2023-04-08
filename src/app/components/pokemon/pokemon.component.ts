@@ -71,8 +71,4 @@ export class PokemonComponent implements OnInit {
   public get gameHasStarted(): boolean {
     return this.gameSelectionService.hasGameStarted;
   }
-
-  private setHPWidth(){
-    return {}
-  }
 }

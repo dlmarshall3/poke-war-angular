@@ -1,7 +1,8 @@
 import { Component, OnInit, Output, ViewChild } from '@angular/core';
+
+import { fireEvent } from 'src/app/shared/helper-functions';
 import { IPokemon } from 'src/app/components/pokemon/pokemon.interface';
 import { GameSelectionService } from 'src/app/services/game-selection.service';
-
 import { PokemonService } from '../../services/pokemon.service';
 
 @Component({
@@ -43,8 +44,7 @@ export class GameBoardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // this.deckSize = this.gameSelectionService.numberSelected;
-    this.deckSize = 56;
+    this.deckSize = this.gameSelectionService.numberSelected;
     this.pokedexIntArray = this.createPokedexIntegerArray();
     this.splitUpPokemon();
   }
@@ -214,9 +214,11 @@ export class GameBoardComponent implements OnInit {
     if (this.playerOnePkmnTotal > this.playerTwoPkmnTotal) {
       this.playerOneResult = 1;
       this.playerTwoResult = 0;
+      fireEvent('pokemonCry', [this.playerTwoActivePokemon.pokedex])
     } else {
       this.playerTwoResult = 1;
       this.playerOneResult = 0;
+      fireEvent('pokemonCry', [this.playerOneActivePokemon.pokedex])
     }
   }
 

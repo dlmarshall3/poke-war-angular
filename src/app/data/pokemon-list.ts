@@ -281,7 +281,7 @@ export const pokemonList = [
       },
       {
         "pokedex": 29,
-        "name": "NidoranF",
+        "name": "Nidoran",
         "typeOne": "Poison",
         "typeTwo": null,
         "total": 275,
@@ -311,7 +311,7 @@ export const pokemonList = [
       },
       {
         "pokedex": 32,
-        "name": "NidoranM",
+        "name": "Nidoran",
         "typeOne": "Poison",
         "typeTwo": null,
         "total": 273,
